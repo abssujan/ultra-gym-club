@@ -3,6 +3,7 @@ import './Main.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import Products from '../Products/Products';
+import Information from '../Information/Information';
 const Main = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
@@ -30,7 +31,7 @@ const Main = () => {
 
             </div>
             <div className="personal-information">
-                <h3>Information</h3>
+               <Information></Information>
             </div>
         </div>
     );
