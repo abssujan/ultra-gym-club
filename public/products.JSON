@@ -3,28 +3,32 @@
         "key": "G8PL3W7YB1",
         "name": "Heavy Duty Squat Rack",
         "about": "A sturdy and durable squat rack with a weight capacity of 1000 lbs.",
-        "img": "https://example.com/images/squat-rack.jpg",
-        "age": "20-25"
+        "img": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1375&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "age": "20-25",
+        "time": "30s"
     },
     {
         "key": "N3BX9V4YTW",
         "name": "Adjustable Dumbbells Set",
         "about": "A versatile set of adjustable dumbbells ranging from 5 to 50 lbs.",
-        "img": "https://example.com/images/dumbbells.jpg",
-        "age": "22-28"
+        "img": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "age": "22-28",
+        "time": "30s"
     },
     {
         "key": "J6YR5L2MXZ",
         "name": "Premium Yoga Mat",
         "about": "A 6 mm thick, eco-friendly PVC yoga mat for enhanced comfort.",
-        "img": "https://example.com/images/yoga-mat.jpg",
-        "age": "18-24"
+        "img": "https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "age": "18-24",
+        "time": "30s"
     },
     {
         "key": "Q4VK7N9PLF",
         "name": "Moisture-Wicking Gym Shirt",
         "about": "A comfortable, polyester gym shirt available in various sizes.",
-        "img": "https://example.com/images/gym-shirt.jpg",
-        "age": "25-30"
+        "img": "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?q=80&w=1294&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "age": "25-30",
+        "time": "30s"
     }
 ]

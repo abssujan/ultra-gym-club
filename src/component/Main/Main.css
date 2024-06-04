@@ -1,0 +1,27 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: #F2F4F4;
+    
+}
+.exercise-container {
+    margin: 100px 80px;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.dumbbell-icon {
+    font-size: 40px;
+    color: #5d5eef;
+    margin-right: 1rem;
+}
+.header h2 {
+     text-transform: uppercase;
+     color: #5d5eef;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+}
