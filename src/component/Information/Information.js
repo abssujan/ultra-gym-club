@@ -1,6 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Information.css'
-const Information = () => {
+import { ToastContainer, toast } from 'react-toastify';
+const Information = (props) => {
+    const [addBreaks, setBreaks] = useState(0);
+    function breakTimes(value){
+       setBreaks(value + addBreaks)
+    }
+    const {times} = props
+    let exerciseTime = 0;
+    for(const time of times ){
+        exerciseTime = exerciseTime + time.time;
+    }
+    function toastPopUp(){
+        toast(`You done it!`, {
+            position: "top",
+            autoClose: 9000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+      
+    }
     return (
         <div className='information-container'>
            <div className="information-head">
@@ -27,11 +49,11 @@ const Information = () => {
            <div className="add-break">
             <h4>Add A Break</h4>
             <div className="health-information-add-break">
-                <p>10s</p>
-                <p>20s</p>
-                <p>30s</p>
-                <p>40s</p>
-                <p>50s</p>
+                <p onClick={() => breakTimes(10)}>10s</p>
+                <p onClick={() => breakTimes(20)}>20s</p>
+                <p onClick={() => breakTimes(30)}>30s</p>
+                <p onClick={() => breakTimes(40)}>40s</p>
+                <p onClick={() => breakTimes(50)}>50s</p>
             </div>
            </div>
            <div className="exercise-details">
@@ -39,15 +61,17 @@ const Information = () => {
             <div className="health-information-exercise-details">
                 <div className='exercise-box'>
                     <p>Exercise Time</p>
-                    <small>200s</small>
+                    <small>{exerciseTime} mints</small>
                 </div>
                 <div className='exercise-box'>
                     <p>Break Time</p>
-                    <small>15s</small>
+                    <small>{addBreaks}s</small>
                 </div>
             </div>
            </div>
-           <button className='health-btn'>Activity Completed</button>
+        
+           <button onClick={toastPopUp} className='health-btn'>Activity Completed</button>
+           <ToastContainer />
         </div>
     );
 };

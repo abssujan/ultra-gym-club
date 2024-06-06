@@ -6,11 +6,16 @@ import Products from '../Products/Products';
 import Information from '../Information/Information';
 const Main = () => {
     const [products, setProducts] = useState([])
+    const [times, setTimes] = useState([])
     useEffect(() => {
         fetch('products.json')
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
+   function addToList(products){
+    const newTime = [...times, products];
+    setTimes(newTime)
+   }
     return (
         <div className='main-container'>
             <div className='exercise-container '>
@@ -23,7 +28,11 @@ const Main = () => {
                      <h4>Select today's exercise</h4>
                      <div className="products">
                         {
-                            products.map(product => <Products product={product} key={product.key}></Products>)
+                            products.map(product => <Products
+                                product={product}
+                                key={product.key}
+                                addToList={addToList}
+                                 ></Products>)
                         }
                      </div>
                     </div>
@@ -31,7 +40,7 @@ const Main = () => {
 
             </div>
             <div className="personal-information">
-               <Information></Information>
+               <Information times={times}></Information>
             </div>
         </div>
     );
