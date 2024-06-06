@@ -1,5 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .information-container {
-    padding: 10px;
+    padding: 20px;
 }
 .pro-img {
     width: 50px;
@@ -16,4 +22,96 @@
 .information-head-name h3 {
     padding: 0;
     margin: 0;
+}
+.health-information {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #CACFD2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.health-information div {
+    margin-right: 1rem;
+}
+.health-information p {
+    font-weight: 700;
+    color: #2C3E50;
+    font-size: 18px;
+}
+.health-information span {
+    font-size: 10px;
+    color: #5d5eef;
+}
+.health-information small {
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #2C3E50;
+}
+.add-break {
+    margin-top: 1rem;
+}
+.health-information-add-break {
+    display: flex;
+    margin-top: 1rem;
+    background-color: #CACFD2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.health-information-add-break p {
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px;
+    font-weight: 500;
+    color: #2C3E50;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.health-information-add-break p:hover {
+    background-color: #5d5eef;
+    color: white;
+}
+.exercise-details {
+    margin-top: 1rem;
+}
+.health-information-exercise-details {
+    margin-top: 1rem;
+}
+.exercise-box {
+    display: flex;
+    margin-top: 1rem;
+    background-color: #CACFD2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.exercise-box p {
+    font-weight: 700;
+    color: #2C3E50;
+}
+.exercise-box small {
+    font-weight: 500;
+    color: #2C3E50;
+}
+.health-btn {
+    margin-top: 2rem;
+    background-color: #5d5eef;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+.health-btn:hover {
+    background-color: orange;
 }

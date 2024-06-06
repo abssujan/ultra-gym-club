@@ -10,6 +10,44 @@ const Information = () => {
             <small>Dhaka, Bangladesh</small>
            </div>
            </div>
+           <div className="health-information">
+            <div className="weight">
+                <p>75<span className='kg'>kg</span></p>
+                <small>weight</small>
+            </div>
+            <div className="height">
+                <p>5.9<span className='kg'>Inch</span></p>
+                <small>Height</small>
+            </div>
+            <div className="health-age">
+                <p>30<span className='kg'>yrs</span></p>
+                <small>Age</small>
+            </div>
+           </div>
+           <div className="add-break">
+            <h4>Add A Break</h4>
+            <div className="health-information-add-break">
+                <p>10s</p>
+                <p>20s</p>
+                <p>30s</p>
+                <p>40s</p>
+                <p>50s</p>
+            </div>
+           </div>
+           <div className="exercise-details">
+            <h4>Exercise Details</h4>
+            <div className="health-information-exercise-details">
+                <div className='exercise-box'>
+                    <p>Exercise Time</p>
+                    <small>200s</small>
+                </div>
+                <div className='exercise-box'>
+                    <p>Break Time</p>
+                    <small>15s</small>
+                </div>
+            </div>
+           </div>
+           <button className='health-btn'>Activity Completed</button>
         </div>
     );
 };
